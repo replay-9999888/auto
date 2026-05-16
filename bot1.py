@@ -551,7 +551,7 @@ def start(message):
 
     bot.send_message(
         message.chat.id, 
-        "<tg-emoji emoji-id='5251299553239398548'>🤖</tg-emoji> <b>𝙼𝚢𝚊ന്မာ 𝙵𝚛𝚒𝚎𝚗𝚍 Bot Online!</b>\n\n"
+        "<tg-emoji emoji-id='5251299553239398548'>🤖</tg-emoji> <b>𝙼𝚢𝚊𝚗𝚖𝚊𝚛 𝙵𝚛𝚒𝚎𝚗𝚍 Bot Online!</b>\n\n"
         "<tg-emoji emoji-id='5240241223632954241'>🚫</tg-emoji> Bio / Join / Link spam auto delete\n"
         "<tg-emoji emoji-id='6271786398404055377'>⚠️</tg-emoji> 3 Warnings = Auto Mute\n\n"
         "<tg-emoji emoji-id='5226945370684140473'>➕</tg-emoji> Bot ကို Group ထဲထည့်ပြီး Admin ပေးထားပါ။",
@@ -616,12 +616,12 @@ def welcome_group(message):
         bot_id = bot.get_me().id
         for user in message.new_chat_members:
             if user.id == bot_id:
-                msg = "<tg-emoji emoji-id='5251299553239398548'>🤖</tg-emoji> <b> 𝙼𝚢𝚊ന്မာ 𝙵𝚛𝚒𝚎𝚗𝚍 Bot Active!</b>\n\nကျွန်တော်ကို Admin ပေးထားဖို့ မမေ့ပါနဲ့ဗျာ။\nSpam linkတွေနဲ့ bioတွေကို အလိုအလျောက် ဖျက်ပေးပါမယ်။"
+                msg = "<tg-emoji emoji-id='5251299553239398548'>🤖</tg-emoji> <b>  𝙼𝚢𝚊𝚗𝚖𝚊𝚛 𝙵𝚛𝚒𝚎𝚗𝚍 Bot Active!</b>\n\nကျွန်တော်ကို Admin ပေးထားဖို့ မမေ့ပါနဲ့ဗျာ။\nSpam linkတွေနဲ့ bioတွေကို အလိုအလျောက် ဖျက်ပေးပါမယ်။"
                 bot.send_message(message.chat.id, msg, reply_markup=main_buttons())
 
 @bot.message_handler(content_types=["group_chat_created", "supergroup_chat_created"])
 def handle_chat_creation(message):
-    bot.send_message(message.chat.id, "<tg-emoji emoji-id='5251299553239398548'>🤖</tg-emoji> Guard Help Bot Active!\nAdmin ပေးထားဖို့ လိုအပ်ပါတယ်။", reply_markup=main_buttons())
+    bot.send_message(message.chat.id, "<tg-emoji emoji-id='5251299553239398548'>🤖</tg-emoji> Group Help Bot Active!\nAdmin ပေးထားဖို့ လိုအပ်ပါတယ်။", reply_markup=main_buttons())
 
 @bot.message_handler(content_types=["text", "photo", "sticker", "story", "video", "animation"])
 def handle_all(message):
@@ -727,7 +727,8 @@ def handle_all(message):
                     f"⚠️ <b>သတိပေးချက် ({strikes}/3)</b> ❌\n"
                     f"<blockquote>"
                     f"👤 User: {mention(message.from_user)}\n"
-                    f"🚫 စည်းကမ်းမကူးစပ်သော စာသားများ မပို့ပါနှင့်။"
+                    f"🚫 (ဘိုင်အို / ဂျိုင်း / လင့်) ဆိုင်ရာ စာသားများ ပိုခြင်းကို ခွင့်မပြုပါ။"
+                    f"⚠️ ၃ ကြိမ် ပြုလုပ်ပါက Auto mute ဖြစ်ပါမည်။"
                     f"</blockquote>", parse_mode="HTML"
                 )
             try: bot.delete_message(chat_id, message.message_id)
