@@ -173,12 +173,12 @@ def main_buttons():
             url=f"https://t.me/{BOT_USERNAME}?startgroup=s&delete_message+manage_video_chats_message+invite_users")
           )
     kb.row(    
-         InlineKeyboardButton("DEV", url="https://t.me/HANTHAR_1999"),
-         InlineKeyboardButton(" စကားပြော ", url="https://t.me/myanmar_music_Bot2027")
+         InlineKeyboardButton("DEV", url="https://t.me/+73UOpH8smTplYTE9"),
+         InlineKeyboardButton(" စကားပြော ", url="https://t.me/+zhdoXlZydqpmZWVl")
           )
     kb.row(  
-        InlineKeyboardButton("Botပြုလုပ်လိုပါက", url="tg://resolve?domain=HEX_KING9&text=Botအသစ်လုပ်ချင်လို့ပါ"),
-        InlineKeyboardButton("UPDATE", url="https://t.me/myanmarbot_music")
+        InlineKeyboardButton("Botပြုလုပ်လိုပါက", url="tg://resolve?domain=HEX_KING9&text=replybot"),
+        InlineKeyboardButton("UPDATE", url="https://t.me/+OqS-RsnNrMtjOTll")
           )
     return kb
 
