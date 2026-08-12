@@ -177,7 +177,7 @@ def main_buttons():
          InlineKeyboardButton(" စကားပြော ", url="https://t.me/+zhdoXlZydqpmZWVl")
           )
     kb.row(  
-        InlineKeyboardButton("Botပြုလုပ်လိုပါက", url="tg://resolve?domain=HEX_KING9&text=replybot"),
+        InlineKeyboardButton("Botပြုလုပ်လိုပါက", url="tg://resolve?domain=cores_999&text=replybot"),
         InlineKeyboardButton("UPDATE", url="https://t.me/+OqS-RsnNrMtjOTll")
           )
     return kb
